@@ -1,0 +1,26 @@
+{
+  "name": "Hotkey tab mover",
+  "description": "User ctrl(cmd) + shift + 0 to move current tab to left most position",
+  "version": "0.1",
+  "manifest_version": 2,
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "permissions": [
+    "tabs"
+  ],
+  // "browser_action": {
+  //   "default_popup": "browser_action.html"
+  // },
+  "commands": {
+    "move-to-left": {
+      "suggested_key": { "default": "Ctrl+Shift+0" },
+      "description": "Move current tab to left most position"
+    },
+    "move-to-right": {
+      "suggested_key": { "default": "Ctrl+Shift+9" },
+      "description": "Move current tab to right most position"
+    }
+  }
+}
